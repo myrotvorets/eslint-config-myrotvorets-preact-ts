@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.2.0",
-    "eslint": ">= 7",
+    "eslint": "^7.10.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
@@ -28,7 +28,7 @@
     "typescript": "^4.0.3"
   },
   "dependencies": {
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^1.0.2",
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^1.0.3",
     "eslint-config-preact": "^1.1.1"
   },
   "keywords": [],
