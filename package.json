@@ -32,7 +32,12 @@
     "@myrotvorets/eslint-config-myrotvorets-ts": "^1.2.7",
     "eslint-config-preact": "^1.1.1"
   },
-  "keywords": [],
+  "keywords": [
+    "eslint-config",
+    "eslint",
+    "typescript",
+    "preact"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/myrotvorets/eslint-config-myrotvorets-preact-ts.git"
@@ -40,5 +45,8 @@
   "bugs": {
     "url": "https://github.com/myrotvorets/eslint-config-myrotvorets-preact-ts/issues"
   },
-  "homepage": "https://github.com/myrotvorets/eslint-config-myrotvorets-preact-ts#readme"
+  "homepage": "https://github.com/myrotvorets/eslint-config-myrotvorets-preact-ts#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }
