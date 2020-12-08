@@ -3,9 +3,10 @@ module.exports = {
     plugins: ['jsx-a11y'],
     extends: ['@myrotvorets/myrotvorets-ts', 'preact', 'plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
     rules: {
-        'no-invalid-this': 'off',
-        'no-use-before-define': 'off',
         'jsx-quotes': ['error', 'prefer-double'],
+        'no-invalid-this': 'off',
+        'no-unused-vars': 'off',
+        'no-use-before-define': 'off',
         '@typescript/no-use-before-define': 'off',
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
