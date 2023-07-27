@@ -8,6 +8,8 @@ module.exports = {
         'no-unused-vars': 'off',
         'no-use-before-define': 'off',
         '@typescript/no-use-before-define': 'off',
+        '@typescript-eslint/no-duplicate-type-constituents': 'off',
+        '@typescript-eslint/no-redundant-type-constituents': 'off',
         'react/jsx-indent': [2, 4],
         'react/jsx-indent-props': [2, 4],
         'react/sort-comp': [
