@@ -1,6 +1,6 @@
 {
   "name": "@myrotvorets/eslint-config-myrotvorets-preact-ts",
-  "version": "3.0.0-rc2",
+  "version": "3.0.0-rc3",
   "description": "ESLint configuration for Preact (TypeScript)",
   "type": "module",
   "exports": "./index.mjs",
@@ -17,7 +17,9 @@
     "eslint": "^9.0.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.1"
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.18.1",
