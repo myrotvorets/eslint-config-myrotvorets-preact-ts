@@ -14,6 +14,9 @@ on:
         default: "yes"
         description: Publish to GPR?
         required: true
+      dist-tag:
+        default: "latest"
+        description: NPM dist-tag
 
 permissions:
   contents: read
@@ -22,10 +25,24 @@ jobs:
   prepare:
     name: Prepare source code
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     if: github.event_name == 'release' || github.event.inputs.npm == 'yes' || github.event.inputs.gpr == 'yes'
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@0080882f6c36860b6ba35c610c98ce87d4e2f26f # v2.10.2
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            objects.githubusercontent.com:443
+            nodejs.org:443
+            registry.npmjs.org:443
+
       - name: Prepare source
-        uses: myrotvorets/composite-actions/node-prepublish@master
+        uses: myrotvorets/composite-actions/node-prepublish@27ab3af18ca12ee3e44e50e015ee74acd199d0dc
 
   publish:
     name: Publish package (${{ matrix.registry }})
@@ -49,9 +66,25 @@ jobs:
             secret: GITHUB_TOKEN
             registry_url: https://npm.pkg.github.com/
     steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@0080882f6c36860b6ba35c610c98ce87d4e2f26f # v2.10.2
+        with:
+          disable-sudo: true
+          egress-policy: block
+          allowed-endpoints: >
+            api.github.com:443
+            github.com:443
+            objects.githubusercontent.com:443
+            nodejs.org:443
+            fulcio.sigstore.dev:443
+            registry.npmjs.org:443
+            rekor.sigstore.dev:443
+            npm.pkg.github.com:443
+
       - name: Publish package
-        uses: myrotvorets/composite-actions/node-publish@master
+        uses: myrotvorets/composite-actions/node-publish@27ab3af18ca12ee3e44e50e015ee74acd199d0dc
         with:
           node-auth-token: ${{ secrets[matrix.secret] }}
           registry-url: ${{ matrix.registry_url }}
+          dist-tag: ${{ github.event.inputs.dist-tag }}
         if: github.event.inputs[matrix.registry] == 'yes' || github.event_name == 'release'
