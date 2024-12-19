@@ -1,10 +1,11 @@
 {
   "name": "@myrotvorets/eslint-config-myrotvorets-preact-ts",
-  "version": "3.0.0-rc1",
+  "version": "3.0.0-rc2",
   "description": "ESLint configuration for Preact (TypeScript)",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.mjs",
   "files": [
-    "index.js"
+    "index.mjs"
   ],
   "scripts": {
     "test": "exit 0"
