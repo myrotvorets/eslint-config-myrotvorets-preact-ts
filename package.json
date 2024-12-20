@@ -1,10 +1,11 @@
 {
   "name": "@myrotvorets/eslint-config-myrotvorets-preact-ts",
-  "version": "2.9.0",
+  "version": "3.0.0-rc3",
   "description": "ESLint configuration for Preact (TypeScript)",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.mjs",
   "files": [
-    "index.js"
+    "index.mjs"
   ],
   "scripts": {
     "test": "exit 0"
@@ -13,24 +14,28 @@
   "license": "MIT",
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "eslint": ">= 7",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4 || ^4.0.0 || ^5.0.0"
+    "eslint": "^9.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "eslint": "^9.17.0",
+    "eslint-plugin-compat": "^6.0.2",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-sonarjs": "^2.0.0",
-    "prettier": "^3.3.3",
-    "typescript": "^5.5.4"
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^2.27.0",
-    "eslint-config-preact": "^1.4.0"
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.1"
   },
   "keywords": [
     "eslint-config",
