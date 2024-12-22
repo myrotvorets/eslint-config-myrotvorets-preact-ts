@@ -78,6 +78,7 @@ export default [
             '@typescript-eslint/no-redundant-type-constituents': 'off',
             'react/jsx-indent': ['error', 4],
             'react/jsx-indent-props': ['error', 4],
+            'react/prop-types': 'off',
             'react/sort-comp': [
                 'error',
                 {
