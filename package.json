@@ -35,7 +35,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.1"
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.2"
   },
   "keywords": [
     "eslint-config",
