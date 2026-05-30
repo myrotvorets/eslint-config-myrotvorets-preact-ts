@@ -31,7 +31,7 @@
     "eslint-plugin-react-hooks": "^7.0.0",
     "eslint-plugin-sonarjs": "^3.0.1",
     "prettier": "^3.4.2",
-    "typescript": "^5.7.2"
+    "typescript": "^6.0.0"
   },
   "dependencies": {
     "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.2"
