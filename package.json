@@ -8,33 +8,24 @@
     "index.mjs"
   ],
   "scripts": {
-    "test": "exit 0"
+    "test": "node --test"
   },
   "author": "Myrotvorets <support@myrotvorets.center> (https://myrotvorets.center/)",
   "license": "MIT",
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "eslint": "^10.0.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^7.0.0"
+    "eslint": "^10.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.18.1",
-    "eslint": "^9.17.0",
-    "eslint-plugin-import": "^2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^7.0.0",
-    "eslint-plugin-sonarjs": "^3.0.1",
-    "prettier": "^3.4.2",
-    "typescript": "^5.7.2"
+    "eslint": "^10.13.0",
+    "preact": "^11.0.2",
+    "prettier": "^3.9.10"
   },
   "dependencies": {
-    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.0.2"
+    "@eslint-react/eslint-plugin": "^5.28.8",
+    "@myrotvorets/eslint-config-myrotvorets-ts": "^3.2.1",
+    "eslint-plugin-jsx-a11y-x": "^0.2.0",
+    "eslint-plugin-prettier": "^5.5.7",
+    "globals": "^17.13.0"
   },
   "keywords": [
     "eslint-config",
@@ -53,5 +44,8 @@
   "publishConfig": {
     "access": "public",
     "provenance": true
+  },
+  "allowScripts": {
+    "unrs-resolver@1.12.2": true
   }
 }
